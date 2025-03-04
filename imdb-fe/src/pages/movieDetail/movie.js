@@ -257,46 +257,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useEffect, useState } from "react";
 import "./movie.css";
 import { useParams } from "react-router-dom";
@@ -316,12 +276,11 @@ const Movie = () => {
             .then((res) => res.json())
             .then((data) => {
                 setMovie(data);
-                // Получаем видео (трейлер)
                 fetch(`https://api.themoviedb.org/3/movie/${id}/videos?api_key=4e44d9029b1270a757cddc766a1bcb63`)
                     .then((res) => res.json())
                     .then((videoData) => {
                         const trailerKey = videoData.results.find((video) => video.type === "Trailer");
-                        setTrailer(trailerKey ? trailerKey.key : null); // Сохраняем ключ трейлера
+                        setTrailer(trailerKey ? trailerKey.key : null); 
                     });
             });
     };
