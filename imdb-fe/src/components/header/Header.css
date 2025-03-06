@@ -1,4 +1,4 @@
-/* .header {
+.header {
     margin: 0 2.5rem;
     padding: .5rem 0;
     align-items: center;
@@ -19,7 +19,7 @@ a > span{
 }
 
 a > span:hover {
-    color: red;
+    color: rgb(255, 149, 0);
 }
 
 .header__icon{
@@ -29,7 +29,7 @@ a > span:hover {
 
 .user__avatar {
     font-size: 2rem;
-} */
+}
 
 
 

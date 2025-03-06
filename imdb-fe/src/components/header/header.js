@@ -25,7 +25,7 @@ const Header = () => {
     return (
         <div className="header">
             <div className="headerLeft">
-                <Link to="/"><img className="header__icon" src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" /></Link>
+                <Link to="/"><img className="header__icon" src="https://cdn.dribbble.com/users/1805562/screenshots/6637153/logo.gif" /></Link>
                 <Link to="/movies/comedy" style={{textDecoration: "none"}}><span>Comedy</span></Link>
                 <Link to="/movies/drama" style={{textDecoration: "none"}}><span>Drama</span></Link>
                 <Link to="/movies/horror" style={{textDecoration: "none"}}><span>Horror</span></Link>
